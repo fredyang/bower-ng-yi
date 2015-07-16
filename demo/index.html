@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yi.demo">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+<div ng-init="name='John'; maxlength=10">
+  <language-selector></language-selector>
+  <div><span yi="message" yi-data-name="{{name}}"></span>. {{'welcome' | yi}}</div>
+  <input maxlength="{{maxlength}}" yi-attr="{placeholder: 'warn_max_length'}" yi-data-maxlength="{{maxlength}}">
+  <input type="range" ng-model="maxlength">
+</div>
+
+<script src="../bower_components/jQuery/dist/jquery.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="../dist/yi.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/languageSelector/languageSelector.js"></script>
+</body>
+</html>

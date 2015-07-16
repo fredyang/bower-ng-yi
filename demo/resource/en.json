@@ -1,0 +1,5 @@
+{
+  "welcome": "Welcome to DemoApp",
+  "warn_max_length": "maximum length is {maxlength}",
+  "message": "Hello, {name}"
+}

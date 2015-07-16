@@ -1,0 +1,31 @@
+{
+  "name": "angular-res",
+  "version": "0.9",
+  "authors": [
+    "Fred Yang <fredyang@semanticsworks.com>"
+  ],
+  "description": "Effortless angularjs localization",
+  "main": "dist/yi.js",
+  "keywords": [
+    "angularjs",
+    "angular module",
+    "localization",
+    "translation",
+    "i18n",
+    "ng"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fredyang/ng-y",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2 < 2",
+    "angular-cookies": ">=1.2 < 2",
+    "jQuery": "^2.1.4"
+  }
+}
