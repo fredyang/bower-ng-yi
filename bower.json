@@ -26,6 +26,6 @@
   "dependencies": {
     "angular": ">=1.2 < 2",
     "angular-cookies": ">=1.2 < 2",
-    "jQuery": "^2.1.4"
+    "jquery": "^2.1.4"
   }
 }

@@ -113,7 +113,7 @@ yiModule.filter('yi', function (resource) {
 'use strict';
 
 
-yiModule.factory('resource', function ($http, $rootScope, userLanguage) {
+yiModule.factory('resource', function ($http, $rootScope, userLanguage, yiConfig) {
 
   var resourceCache;
 
@@ -156,7 +156,7 @@ yiModule.factory('resource', function ($http, $rootScope, userLanguage) {
   $rootScope.$watch(function () {
     return userLanguage();
   }, function (lang) {
-    resourceCache = $http.get('resource/' + lang + '.json').then(function (response) {
+    resourceCache = $http.get(yiConfig.resourcePath + lang + '.json').then(function (response) {
       resourceCache = response.data;
       $rootScope.$broadcast(rtn.changedEvent);
       return resourceCache;
@@ -259,11 +259,12 @@ yiModule.factory('userLanguage', function ($window, yiConfig, $cookieStore) {
 });
 
 yiModule.value('yiConfig', {
-    supportedLanguages: {
-        en: 'English'
-    },
-    defaultLanguage: 'en',
-    cookieName: 'language'
+  supportedLanguages: {
+    en: 'English'
+  },
+  defaultLanguage: 'en',
+  cookieName: 'language',
+  resourcePath: 'resource/'
 });
 
 })(angular);

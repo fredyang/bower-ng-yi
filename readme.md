@@ -19,8 +19,7 @@ Add a `<script>` to your `index.html`:
 ```html
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/ng-yi/yi.js"></script>
+<script src="bower_components/ng-yi/dist/yi.js"></script>
 ```
 
 Inject the dependency into your application module
